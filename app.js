@@ -61,13 +61,9 @@ function usingFilesystem(){
 	return fs.existsSync(directory);
 }
 
-app.set('port', process.env.PORT || 6666);
+app.set('port', process.env.PORT || 3000);
 
-serviceController = express();
-serviceController.set('port', 3333)
-serviceController.enable('trust proxy');
-serviceController.use(express.json());
-
+ser
 
 if( usingFilesystem() ) {
 	app.get('/files', function(req,res){
