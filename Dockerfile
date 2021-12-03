@@ -14,6 +14,6 @@ COPY public ./public
 RUN npm install \
     && npm audit fix 
 
-EXPOSE 3333
+EXPOSE 6666
 
 CMD ["node", "app.js"]
